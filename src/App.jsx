@@ -10,6 +10,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/create-task" element={<Form />} />
+          <Route path="/edit-task/:id" element={<Form />} />
         </Routes>
       </BrowserRouter>
     </div>
