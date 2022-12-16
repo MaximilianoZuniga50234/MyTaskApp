@@ -7,14 +7,6 @@ const NavBar = () => {
       <Link className="text-3xl rounded-full hover:bg-slate-800 p-2 ml-2">
         <GoHome />
       </Link>
-      <input
-        type="text"
-        placeholder="Browse"
-        className="rounded-xl px-2 text-black w-1/4 bg-slate-200 placeholder:text-gray-500"
-      />
-      <Link to="/create-task" className="bg-emerald-400 text-black px-2 py-1 rounded-md hover:bg-emerald-300">
-        New Task
-      </Link>
       <div className="flex gap-6 mr-4 items-center">
         <Link className="bg-emerald-400 text-black px-2 py-1 rounded-md hover:bg-emerald-300">
           Sing in

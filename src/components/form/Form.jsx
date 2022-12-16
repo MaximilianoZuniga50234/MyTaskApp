@@ -50,12 +50,15 @@ const Form = () => {
     <div className="w-screen h-screen flex flex-col justify-center items-center bg-slate-700">
       <form
         onSubmit={handleSubmit}
-        className="bg-slate-900 text-white w-1/4 h-1/3 p-4 flex flex-col rounded-2xl"
+        className="bg-slate-900 text-white w-1/4 h-1/3 p-4 p flex flex-col rounded-2xl"
       >
         <div className="h-3/4 w-full mt-4 p-2 flex flex-col gap-4">
           <div className="h-1/3 w-full flex flex-col gap-1">
             <label className="text-md font-semibold block">Title</label>
             <input
+              minLength={3}
+              maxLength={10}
+              required
               name="title"
               onChange={handleChange}
               value={task.title}
